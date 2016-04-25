@@ -58,11 +58,11 @@ public class HelloWorld {
     	
     	if (sumTermValuesSquared.compareTo(sumErrorValuesSquared) == -1) return BigDecimal.ZERO;
     	
-    	BigDecimal actitudeFunction = sumTermValuesSquared
+    	BigDecimal fitness = sumTermValuesSquared
     			.subtract(sumErrorValuesSquared) 
     			.divide(sumTermValuesSquared, 100, RoundingMode.HALF_DOWN);
 
-		return actitudeFunction;
+		return fitness;
     }
     
 	public static void main(String[] args) {
